@@ -186,7 +186,7 @@ html,body{
   .btn:visited,
   input[type=submit] {
       color: white;
-      background-color: #0b413e;
+      background-color: #0f5f5a;
       display: inline-block;
       font-weight: 300;
       text-decoration: none;
@@ -207,7 +207,7 @@ html,body{
   .btn_CTA:visited,
   input[type=submit] {
       color: white;
-      background-color: #0f5f5a;
+      background-color: #0b413e;
       display: inline-block;
       font-weight: 300;
       text-decoration: none;
@@ -249,8 +249,7 @@ input[type=submit] {
     text-decoration: none;
     -webkit-transition: background-color 0.3s, color 0.3s;
     transition: background-color 0.3s, color 0.3s;
-    margin-right: 15px;
-    margin-top: 15px;
+    margin: 15px 15px 15px 15px;
     padding: .75rem 1.2rem;
 }
 
@@ -271,4 +270,8 @@ input[type=submit]:active {
 .text{
   line-height: 25px;
   font-size: 17px;
+  margin-bottom: 30px;
+}
+.section-contact{
+  margin-bottom: -30px;
 }
