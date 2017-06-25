@@ -73,19 +73,20 @@ html,body{
     h3 {
         font-weight: 300;
         text-transform: uppercase;
+        white-space: normal;
     }
 
     h1 {
         margin-top: 0;
         margin-bottom: 20px;
         color: #fff;
-        font-size: 240%;
+        font-size: 120%;
         word-spacing: 4px;
         letter-spacing: 1px;
     }
 
     h2 {
-        font-size: 180%;
+        font-size: 100%;
         word-spacing: 2px;
         text-align: center;
         margin-bottom: 30px;
@@ -93,7 +94,7 @@ html,body{
     }
 
     h3 {
-        font-size: 110%;
+        font-size: 90%;
         margin-bottom: 15px;
         line-height: 24px;
     }
@@ -115,6 +116,7 @@ html,body{
         margin-left: 15%;
         margin-bottom: 50px;
         text-align: center;
+
     }
     .box p{
         font-size: 90%;
@@ -125,10 +127,14 @@ html,body{
       width: auto;
       float: left;
       margin-top: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) scale(.8);
     }
     .nav_bar{
-      background-color: rgba(13,80,76,.55);
       height: 100px;
+      position: relative;
+    /* z-index: 1;*/
     }
     .main-nav {
       float: right;
@@ -160,24 +166,29 @@ html,body{
   }
   /* ----------------------------------------------- */
   /* HEADER */
-  /* ----------------------------------------------- */
+  /* --------------------------header{
+    background: rgba(0, 0, 0, 0.8);
+}--------------------- */
 
   header {
-      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../../assets/images/hero-min.jpg);
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../../assets/images/hero-min.jpg);
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../../assets/images/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../../assets/images/hero-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
   }
 
   .hero-text-box {
       position: absolute;
-      width: 1140px;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      margin-top: 220px;
+      padding: 0 2%;
+      /*z-index: 1;*/
+      padding-top: 88px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      text-align: center;
   }
   /* ----- BUTTONS -----
   padding: 14px 30px;
@@ -275,3 +286,75 @@ input[type=submit]:active {
 .section-contact{
   margin-bottom: -30px;
 }
+#slideshow {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    margin-top: -100px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow > div {
+    position: absolute;
+}
+.menu_content{
+  display: none;
+}
+.site-header__menu-icon {
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+}
+/* ----- MEDIA QUERIES -----;*/
+@media (min-width:320px){
+  .hero-text-box{
+    padding: 0 2%;
+    padding-top: 50px;
+    }
+}
+  /*Mobile-layout break here------------------------------------------*/@media (min-width:530px){
+    .hero-text-box{
+      padding: 0 2%;
+      }
+  }
+  /*Tablet*/@media (min-width:890px){
+    .hero-text-box{
+      padding: 0 10%;
+      padding-top: 140px;
+    }
+    .menu_content{
+      display: block;
+    }
+    .nav_bar{
+      background-color: rgba(13,80,76,.5);
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    .logo{
+      left: auto;
+      transform: translateX(0);
+    }
+    .hero-text-box{
+      margin-top: 300px;
+    }
+
+    h1{
+      font-size: 240%;
+    }
+    h2{
+      font-size: 180%;
+    }
+    h3{
+      font-size: 110%;
+    }
+    .site-header__menu-icon{
+      display: none;
+    }
+  }
+  /*Laptop*/@media (min-width:1024px){
+    .hero-text-box{
+
+      }
+  }
