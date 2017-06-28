@@ -1,10 +1,3 @@
-/*
-Orange color: #e67e22
-background-image: url("../../assets/images/escheresque_ste.png");
-background-repeat: repeat;
-*/
-
-
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
@@ -24,21 +17,6 @@ html,body{
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
   }
-  h1,
-  h2,
-  h3 {
-      font-weight: 300;
-      text-transform: uppercase;
-  }
-
-  h1 {
-      margin-top: 0;
-      margin-bottom: 20px;
-      color: #fff;
-      font-size: 240%;
-      word-spacing: 4px;
-      letter-spacing: 1px;
-  }
 .clearfix {zoom: 1;}
 .clearfix:after {
       content: '.';
@@ -51,42 +29,41 @@ html,body{
     padding-left: 32px;
     padding-right: 32px;
 }
-    /* ----------------------------------------------- */
-    /* REUSABLE COMPONENTS */
-    /* ----------------------------------------------- */
-    .row {
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+.row {
         max-width: 1140px;
         margin: 0 auto;
     }
 
-    section {
+section {
         padding: 80px 0;
     }
 
-    .box {
+.box {
         padding: 1%;
     }
 
-    /* ----- HEADINGS ----- */
+/* ----- HEADINGS ----- */
     h1,
     h2,
     h3 {
         font-weight: 300;
         text-transform: uppercase;
-        white-space: normal;
     }
 
     h1 {
         margin-top: 0;
         margin-bottom: 20px;
         color: #fff;
-        font-size: 120%;
+        font-size: 240%;
         word-spacing: 4px;
         letter-spacing: 1px;
     }
 
     h2 {
-        font-size: 100%;
+        font-size: 180%;
         word-spacing: 2px;
         text-align: center;
         margin-bottom: 30px;
@@ -94,7 +71,7 @@ html,body{
     }
 
     h3 {
-        font-size: 90%;
+        font-size: 110%;
         margin-bottom: 15px;
         line-height: 24px;
     }
@@ -109,87 +86,68 @@ html,body{
         margin-top: 30px;
     }
 
-    /* ----- PARAGRAPHS ----- */
+/* ----- PARAGRAPHS ----- */
     .long-copy {
         line-height: 145%;
         width: 70%;
         margin-left: 15%;
         margin-bottom: 50px;
         text-align: center;
-
     }
     .box p{
         font-size: 90%;
         line-height: 145%;
     }
-    .logo{
-      height: 85px;
-      width: auto;
-      float: left;
-      margin-top: 10px;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%) scale(.8);
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+  .logo{
+    height: 85px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+  }
+  .nav_bar{
+    background-color: rgba(13,80,76,.55);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+    z-index: 11;
+    @media (min-width: 888px){
+      opacity: 0;
     }
-    .nav_bar{
-      height: 100px;
-      position: relative;
-    /* z-index: 1;*/
+  }
+  .main-nav {
+    list-style: none;
+    margin-top: 43px;
     }
-    .main-nav {
-      float: right;
-      list-style: none;
-      margin-top: 43px;
-      }
 
   .main-nav li {
-      display: inline-block;
-      margin-left: 40px;
-      margin-right: 8px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 8px;
+    float: right;
   }
 
   .main-nav li a:link,
   .main-nav li a:visited {
-      padding: 8px 0;
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 90%;
-      border-bottom: 2px solid transparent;
-      -webkit-transition: border-bottom 0.3s;
-      transition: border-bottom 0.3s;
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
   }
 
   .main-nav li a:hover,
   .main-nav li a:active {
-      border-bottom: 2px solid #e67e22;
-  }
-  /* ----------------------------------------------- */
-  /* HEADER */
-  /* --------------------------header{
-    background: rgba(0, 0, 0, 0.8);
-}--------------------- */
-
-  header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../../assets/images/hero-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../../assets/images/hero-min.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    border-bottom: 2px solid #e67e22;
   }
 
-  .hero-text-box {
-      position: absolute;
-      margin-top: 220px;
-      padding: 0 2%;
-      /*z-index: 1;*/
-      padding-top: 88px;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      left: 0;
-      width: 100%;
-      text-align: center;
-  }
   /* ----- BUTTONS -----
   padding: 14px 30px;
   border-radius: 100px;*/
@@ -235,15 +193,58 @@ html,body{
   input[type=submit]:active {
       background-color: #e67e22;
   }
-
+  /* ----------------------------------------------- */
+  /* SECTIONS */
+  /* ----------------------------------------------- */
   .project {
-      border-radius: 70px;
-      overflow: hidden;
-      width: 140px;
-      height: 140px;
-      border: 6px solid rgba(222,222,222,.5);
-      margin: auto auto 30px auto;
+        border-radius: 70px;
+        overflow: hidden;
+        width: 140px;
+        height: 140px;
+        border: 6px solid rgba(222,222,222,.5);
+        margin: auto auto 30px auto;
+    }
+  .box img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
   }
+  .section-steel{
+    background-color: #f4f4f4;
+  }
+  .contact_text{
+    line-height: 25px;
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  .section-contact{
+    margin-bottom: -30px;
+  }
+  /* ----------------------------------------------- */
+  /* LARGE-HERO */
+  /* ----------------------------------------------- */
+  .large-hero {
+    border-bottom: 10px solid #12a89c;
+    position: relative;
+    background-color: black;
+  }
+  .large-hero__image {
+      display: block;
+      opacity: 0.5;
+    }
+  .large-hero__text-content {
+      padding-top: 88px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      text-align: center;
+
+    }
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
 .footer{
   background-color: #0d504c;
   color: #fff;
@@ -263,98 +264,9 @@ input[type=submit] {
     margin: 15px 15px 15px 15px;
     padding: .75rem 1.2rem;
 }
-
 .btn_CTA_footer:hover,
 .btn_CTA_footer:active,
 input[type=submit]:hover,
 input[type=submit]:active {
     background-color: #12a89c;
 }
-.box img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-.section-steel{
-  background-color: #f4f4f4;
-}
-.text{
-  line-height: 25px;
-  font-size: 17px;
-  margin-bottom: 30px;
-}
-.section-contact{
-  margin-bottom: -30px;
-}
-#slideshow {
-    position: relative;
-    width: auto;
-    height: 100vh;
-    margin-top: -100px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
-
-#slideshow > div {
-    position: absolute;
-}
-.menu_content{
-  display: none;
-}
-.site-header__menu-icon {
-    width: 20px;
-    height: 19px;
-    position: absolute;
-    z-index: 10;
-    top: 20px;
-    right: 20px;
-}
-/* ----- MEDIA QUERIES -----;*/
-@media (min-width:320px){
-  .hero-text-box{
-    padding: 0 2%;
-    padding-top: 50px;
-    }
-}
-  /*Mobile-layout break here------------------------------------------*/@media (min-width:530px){
-    .hero-text-box{
-      padding: 0 2%;
-      }
-  }
-  /*Tablet*/@media (min-width:890px){
-    .hero-text-box{
-      padding: 0 10%;
-      padding-top: 140px;
-    }
-    .menu_content{
-      display: block;
-    }
-    .nav_bar{
-      background-color: rgba(13,80,76,.5);
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    }
-    .logo{
-      left: auto;
-      transform: translateX(0);
-    }
-    .hero-text-box{
-      margin-top: 300px;
-    }
-
-    h1{
-      font-size: 240%;
-    }
-    h2{
-      font-size: 180%;
-    }
-    h3{
-      font-size: 110%;
-    }
-    .site-header__menu-icon{
-      display: none;
-    }
-  }
-  /*Laptop*/@media (min-width:1024px){
-    .hero-text-box{
-
-      }
-  }
