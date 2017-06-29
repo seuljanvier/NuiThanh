@@ -117,39 +117,41 @@ section {
     position: fixed;
     margin-top: 0;
     z-index: 11;
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
     @media (min-width: 888px){
       opacity: 0;
     }
   }
-  .main-nav {
-    list-style: none;
-    margin-top: 43px;
-    }
-
-  .main-nav li {
-    display: inline-block;
-    margin-left: 40px;
-    margin-right: 8px;
-    float: right;
+  .nav_bar:hover{background-color: rgba(13,80,76,.85);}
+  .topnav {overflow: hidden;margin-top: 40px;}
+  .topnav a {
+      float: right;
+      display: block;
+      text-transform: uppercase;
+      font-size: 90%;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 8px 0;
+      margin-left: 40px;
+      margin-right: 8px;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: border-bottom 0.3s;
+      transition: border-bottom 0.3s;
   }
-
-  .main-nav li a:link,
-  .main-nav li a:visited {
-    padding: 8px 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
+  .topnav a:link,
+  .topnav a:visited {
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.3s;
     transition: border-bottom 0.3s;
   }
 
-  .main-nav li a:hover,
-  .main-nav li a:active {
+  .topnav a:hover,
+  .topnav a:active {
     border-bottom: 2px solid #e67e22;
   }
-
+  .topnav .icon {display: none;}
   /* ----- BUTTONS -----
   padding: 14px 30px;
   border-radius: 100px;*/

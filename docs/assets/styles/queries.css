@@ -4,9 +4,11 @@
 
     .logo{
       position: absolute;
+      background-color: rgba(13,80,76,1);
       width: 70%; height: auto;
-      top: 15px;
       left: 50%;
+      margin-top: 0;
+      padding: 10px;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -48,8 +50,10 @@
     h1{font-size: 180%;}
     .logo{
       position: absolute;
-      top: 15px;
+      background-color: rgba(13,80,76,1);
       left: 50%;
+      margin-top: 0;
+      padding: 10px;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -66,14 +70,15 @@
     .box p{margin: auto 5%;font-size: 75%;}
     .stell_header{font-size: 150%; white-space: nowrap;}
     h3{font-size: 80%;}
-    .logo{height: 85px;width: auto;float: left;margin-top: 10px;}
     .box p{margin: auto 5%;font-size: 85%;}
     h3{font-size: 80%;}
     h1{font-size: 180%;}
     .logo{
       position: absolute;
-      top: 15px;
+      background-color: rgba(13,80,76,1);
       left: 50%;
+      margin-top: 0;
+      padding: 10px;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -81,11 +86,20 @@
       transition: transform .3s ease-out;
       transition: transform .3s ease-out,-webkit-transform .3s ease-out;
     }
+
 }
 
 /*---------------------------------------------------------css889----*/
-@media (max-width:889px){
+@media screen and (max-width: 900px) {
+  .topnav a:not(:last-child) {display: none;}
+  .topnav a.icon:link,.topnav a.icon:visited {font-size: 150%; float: right; display: block; opacity: 0.7;-webkit-transition: opacity 0.4s; transition: opacity 0.4s;}
+  .topnav a.icon:hover,.topnav a.icon:active {opacity: 1;}
   .box p{margin: auto 5%;text-align: center;}
   .nav_bar{background: none;}
-  .main-nav{display: none;}
+}
+@media screen and (max-width: 900px) {
+  .topnav.responsive {position: relative;background-color: rgba(13,80,76,.75);}
+  .topnav.responsive a.icon {position: absolute; right: 0; top: 0;}
+  .topnav.responsive a:not(:last-child) {float: none; display: block; text-align: center;;padding-top: 10px;}
+  .topnav.responsive a:first-child {padding-top: 45px;}
 }

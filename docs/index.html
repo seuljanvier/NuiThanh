@@ -16,18 +16,17 @@
 
 </head>
 <body>
-  <header>
+  <header><div id="top__page"></div>
     <div class="wrapper nav_bar">
       <div class="header_logo">
-        <img src="assets/images/logo.png" alt="Nui Thanh logo" class="logo">
+        <a href="#top__page"><img src="assets/images/logo.png" alt="Nui Thanh logo" class="logo"></a>        
       </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#testimonials" id="contact">Contact Us</a></li>
-          <li><a href="#our-beginning" id="products">Our Products</a></li>
-          <li><a href="#features" id="activities">Activities</a></li>
-        </ul>
-      </nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#contact_us" id="contact">Contact Us</a>
+        <a href="#steel" id="products">Our Products</a>
+        <a href="#features" id="activities">Activities</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
   </div>
   </header>
   <div class="large-hero">
@@ -126,7 +125,7 @@
             </div>
         </div>
     </section>
-  <section class="section-contact" id="contact">
+  <section class="section-contact" id="contact_us">
       <h2>CONTACT INFORMATION	</h2>
       <div class="row wrapper">
         <div class="col span-1-of-2 box">
@@ -165,5 +164,15 @@
       <p><span class="footer_text">Copyright &copy; 2017 Nui Thanh. All rights reserved.</span> <a href="#" class="btn_CTA_footer">Get in Touch</a></p>
     </div>
   </footer>
+  <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+  </script>
 </body>
 </html>
