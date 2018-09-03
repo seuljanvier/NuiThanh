@@ -49,7 +49,7 @@ section {
     h1,
     h2,
     h3 {
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
     }
 
@@ -111,7 +111,7 @@ section {
     margin-top: 10px;
   }
   .nav_bar{
-    background-color: rgba(13,80,76,.55);
+    background-color: rgba(51, 139, 57,.55);
     height: 100px;
     width: 100%;
     position: fixed;
@@ -123,7 +123,7 @@ section {
       opacity: 0;
     }
   }
-  .nav_bar:hover{background-color: rgba(13,80,76,.85);}
+  .nav_bar:hover{background-color: rgba(51, 139, 57,.85);}
   .topnav {overflow: hidden;margin-top: 40px;}
   .topnav a {
       float: right;
@@ -159,7 +159,7 @@ section {
   .btn:visited,
   input[type=submit] {
       color: white;
-      background-color: #0f5f5a;
+      background-color: #365688;
       display: inline-block;
       font-weight: 300;
       text-decoration: none;
@@ -180,7 +180,7 @@ section {
   .btn_CTA:visited,
   input[type=submit] {
       color: white;
-      background-color: #0b413e;
+      background-color: #223858;
       display: inline-block;
       font-weight: 300;
       text-decoration: none;
@@ -201,11 +201,11 @@ section {
   /* SECTIONS */
   /* ----------------------------------------------- */
   .project {
-        border-radius: 70px;
+        border-radius: 25px;
         overflow: hidden;
         width: 140px;
         height: 140px;
-        border: 6px solid rgba(222,222,222,.5);
+        border: 6px solid rgba(222,222,222,.2);
         margin: auto auto 30px auto;
     }
   .box img {
@@ -251,7 +251,7 @@ section {
 /* FOOTER */
 /* ----------------------------------------------- */
 .footer{
-  background-color: #0d504c;
+  background-color: #338B39;
   color: #fff;
   padding: .5rem 0;
   text-align: center;
